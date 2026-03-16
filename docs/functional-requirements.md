@@ -1,5 +1,12 @@
 # Functional Requirements
 
+## UI and Accessibility Requirements
+
+1. The app must follow the UI standards defined in [UI Guidelines](./ui-guidelines.md).
+2. The UI must use Material components for primary interaction patterns.
+3. The visual design must use a calming, blue-led color palette.
+4. All core workflows must be fully keyboard accessible.
+
 ## Core Task Management
 
 1. The user can create a new task.
