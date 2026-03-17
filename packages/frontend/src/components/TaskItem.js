@@ -14,19 +14,7 @@ import {
 } from '@mui/material';
 import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
 import EditOutlinedIcon from '@mui/icons-material/EditOutlined';
-
-function formatDueDate(dueDate) {
-  if (!dueDate) {
-    return 'No due date';
-  }
-
-  const parsed = new Date(dueDate);
-  if (Number.isNaN(parsed.getTime())) {
-    return dueDate;
-  }
-
-  return parsed.toLocaleDateString();
-}
+import { formatDueDate } from '../utils/dueDate';
 
 function TaskItem({ task, onToggleComplete, onEditTask, onRequestDelete, disabled = false }) {
   const [isEditing, setIsEditing] = useState(false);
